@@ -127,49 +127,7 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <table>
-                <caption>
-                    Compétence acquise BUT 1
-                </caption>
-                <table class="table table-bordered text-center">
-                    <thead class="custom-header">
-                      <tr>
-                        <th scope="col" class="header-cell header-prog">
-                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalProgrammation">PROGRAMMATION</a>
-                        </th>
-                        <th scope="col" class="header-cell header-reseau">
-                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalReseau">RÉSEAU</a>
-                        </th>
-                        <th scope="col" class="header-cell header-connecter">
-                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalConnecter">CONNECTER</a>
-                        </th>
-                      </tr>
-                    </thead>
-                  
-                    <tbody>
-                      <tr>
-                        <td>Lire, exécuter, corriger et modifier un programme</td>
-                        <td>Maîtriser les lois fondamentales de l’électricité</td>
-                        <td>Utiliser une démarche scientifique</td>
-                      </tr>
-                      <tr>
-                        <td>Utiliser un système informatique et ses outils</td>
-                        <td>Maîtriser les composantes des solutions de connexion</td>
-                        <td>Communiquer avec un client ou un collaborateur</td>
-                      </tr>
-                      <tr>
-                        <td>Connaître l’architecture et les technologies d’un site Web</td>
-                        <td>Concevoir un réseau</td>
-                        <td>Communiquer en anglais</td>
-                      </tr>
-                      <tr>
-                        <td>Sensibiliser aux vulnérabilités d’un système d’information</td>
-                        <td>Configurer les fonctions de base du réseau local</td>
-                        <td>Mesurer et analyser les signaux</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  
+    
                 <table>
                     <caption>
                         Compétence du BUT
@@ -185,36 +143,74 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">Administrer</th>
-                        <td>Assister l’administrateur du réseau</td>
-                        <td>Administrer un réseau</td>
-                        <td>Concevoir un réseau</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Connecter</th>
-                        <td>Découvrir les transmissions et la ToIP</td>
-                        <td>Maîtriser composantes des solutions de connexion</td>
-                        <td>Déployer une solution de connexion ou de communication</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Surveiller</th>
-                        <td>Prendre en main les outils de surveillance et de test du système d'information</td>
-                        <td>Mettre en œuvre le système de surveillance d’incidents de sécurité</td>
-                        <td>X</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Créer</th>
-                        <td>v</td>
-                        <td>a</td>
-                        <td>X</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Sécuriser</th>
-                        <td>Sensibiliser aux vulnérabilités d'un système d'information </td>
-                        <td>Mettre en œuvre un système d’information sécurisé pour une petite structure</td>
-                        <td>X</td>
-                      </tr>
+                        <tr>
+                            <th scope="col">
+                              ADMINISTRER
+                            </th>                        
+                            <td>Assister l’administrateur du réseau</td>
+                            <td class="clic-niveau2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAdministrer2">
+                                  Administrer un réseau
+                                </a>
+                              </td>
+                            <td>Concevoir un réseau</td>
+                          </tr>
+                          
+                          <tr>
+                            <th scope="col">
+                              CONNECTER
+                            </th>
+                            <td>Découvrir les transmissions et la ToIP</td>
+                            <td class="clic-niveau2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalConnecter2">
+                                    Maîtriser composantes des solutions de connexion
+                                </a>
+                              </td>
+                            <td>Déployer une solution de connexion ou de communication</td>
+                          </tr>
+                          
+                          <tr>
+                            <th scope="col">
+                              PROGRAMMER
+                            </th> 
+                            <td>S’intégrer dans un service informatique</td>
+                            <td class="clic-niveau2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProgrammer2">
+                                    Développer une application R&T
+                                </a>
+                              </td>
+                            <td>Piloter un projet de développement d’une application R&T</td>
+                          </tr>
+                          
+                          <tr>
+                            <th scope="col">
+                              SURVEILLER
+                            </th> 
+                            <td class="clic-niveau2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalSurveiller2">
+                                    Prendre en main les outils de surveillance et de test du système d'information                                </a>
+                            </td>
+                            <td>
+                                    Mettre en œuvre le système de surveillance d’incidents de sécurité
+                            </td>
+                            <td>X</td>
+                          </tr>
+                          
+                          <tr>
+                            <th scope="col">
+                              SECURISER
+                            </th> 
+                            <td class="clic-niveau2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalSecuriser2">
+                                    Sensibiliser aux vulnérabilités d'un système d'information                                
+                                </a>
+                            </td>
+                            <td>
+                                Mettre en œuvre un système d’information sécurisé pour une petite structure
+                            </td>
+                            <td>X</td>
+                          </tr>
+                          
                     </tbody>
                     <tfoot>
                     </tfoot>
@@ -493,96 +489,207 @@
                 </div>
             </div>
         </div>
-                <!-- Modal Programmation -->
-        <div class="portfolio-modal modal fade" id="modalProgrammation" tabindex="-1" aria-labelledby="modalProgrammation" aria-hidden="true">
+
+        <!-- Modal ADMINISTRER -->
+        <div class="portfolio-modal modal fade" id="modalAdministrer2" tabindex="-1" aria-labelledby="modalAdministrer2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
-            <div class="modal-content">
+            <div class="modal-content text-center pb-5">
                 <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
-                <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Programmation</h2>
-                        <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                        </div>
-                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/code.png" alt="Programmation" />
-                        <p class="mb-4">Lire, corriger, modifier un programme, utiliser un système informatique, créer des sites web, sensibiliser à la cybersécurité...</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal">
-                        <i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
+                <div class="modal-body">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ADMINISTRER</h2>
         
-        <!-- Modal Réseau -->
-        <div class="portfolio-modal modal fade" id="modalReseau" tabindex="-1" aria-labelledby="modalReseau" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Réseau</h2>
-                        <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                        </div>
-                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/reseau.png" alt="Réseau" />
-                        <p class="mb-4">Concevoir, configurer et administrer un réseau, comprendre les lois de l’électricité et les protocoles de communication.</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal">
-                        <i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
         
-        <!-- Modal Connecter -->
-        <div class="portfolio-modal modal fade" id="modalConnecter" tabindex="-1" aria-labelledby="modalConnecter" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Connecter</h2>
-                        <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                        </div>
-                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/connect.png" alt="Connecter" />
-                        <p class="mb-4">Communiquer efficacement, utiliser une démarche scientifique, travailler en équipe, et maîtriser la communication technique.</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal">
-                        <i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre
+                <p class="mb-4">Cliquez sur une compétence pour afficher sa description.</p>
+        
+                <!-- 🧩 Liste des 5 compétences -->
+                <div class="accordion text-start" id="accordionAdmin">
+        
+                    <!-- Compétence 1 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="adminComp1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin1" aria-expanded="false" aria-controls="collapseAdmin1">
+                            AC21.01 | Configurer et dépanner le routage dynamique dans un réseau
                         </button>
+                    </h2>
+                    <div id="collapseAdmin1" class="accordion-collapse collapse" aria-labelledby="adminComp1" data-bs-parent="#accordionAdmin">
+                        <div class="accordion-body">
+                        Installation complète d’un serveur Linux (Debian/Ubuntu), configuration réseau, gestion des services (SSH, DNS, DHCP, NTP...).
+                        </div>
                     </div>
                     </div>
+        
+                    <!-- Compétence 2 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="adminComp2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin2" aria-expanded="false" aria-controls="collapseAdmin2">
+                            AC21.02 | Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d’un réseau                </button>
+                    </h2>
+                    <div id="collapseAdmin2" class="accordion-collapse collapse" aria-labelledby="adminComp2" data-bs-parent="#accordionAdmin">
+                        <div class="accordion-body">
+                        Création, suppression et gestion des comptes utilisateurs, groupes et droits d’accès dans un environnement multi-utilisateur.
+                        </div>
+                    </div>
+                    </div>
+        
+                    <!-- Compétence 3 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="adminComp3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin3" aria-expanded="false" aria-controls="collapseAdmin3">
+                            AC21.03 | Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée
+                        </button>
+                    </h2>
+                    <div id="collapseAdmin3" class="accordion-collapse collapse" aria-labelledby="adminComp3" data-bs-parent="#accordionAdmin">
+                        <div class="accordion-body">
+                        Installation et configuration de services tels que le partage de fichiers (Samba/NFS), le serveur web (Apache/Nginx), et la messagerie.
+                        </div>
+                    </div>
+                    </div>
+        
+                    <!-- Compétence 4 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="adminComp4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin4" aria-expanded="false" aria-controls="collapseAdmin4">
+                            AC21.04 | Déployer des services réseaux avancés
+                        </button>
+                    </h2>
+                    <div id="collapseAdmin4" class="accordion-collapse collapse" aria-labelledby="adminComp4" data-bs-parent="#accordionAdmin">
+                        <div class="accordion-body">
+                        Utilisation de scripts Bash ou Python pour automatiser les tâches courantes : sauvegardes, mises à jour, surveillance du système.
+                        </div>
+                    </div>
+                    </div>
+        
+                    <!-- Compétence 5 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="adminComp5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin5" aria-expanded="false" aria-controls="collapseAdmin5">
+                            AC21.05 | Identifier les réseaux opérateurs et l’architecture d’Internet
+                        </button>
+                    </h2>
+                    <div id="collapseAdmin5" class="accordion-collapse collapse" aria-labelledby="adminComp5" data-bs-parent="#accordionAdmin">
+                        <div class="accordion-body">
+                        Mise en œuvre d’outils de supervision (Nagios, Zabbix), analyse des journaux systèmes et gestion des incidents de sécurité.
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Compétence 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="adminComp6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin6" aria-expanded="false" aria-controls="collapseAdmin5">
+                            AC21.06 | Travailler en équipe pour développer ses compétences professionnelles
+                        </button>
+                        </h2>
+                        <div id="collapseAdmin6" class="accordion-collapse collapse" aria-labelledby="adminComp6" data-bs-parent="#accordionAdmin">
+                        <div class="accordion-body">
+                            Mise en œuvre d’outils de supervision (Nagios, Zabbix), analyse des journaux systèmes et gestion des incidents de sécurité.
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            </div>
-        </div>
   
+          <!-- Bouton de fermeture -->
+          <button class="btn btn-primary mt-4" data-bs-dismiss="modal">
+            <i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre
+          </button>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+        
+                <!-- Modal CONNECTER niveau 2 -->
+                <div class="portfolio-modal modal fade" id="modalConnecter2" tabindex="-1" aria-labelledby="modalConnecter2" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                    <div class="modal-content text-center pb-5">
+                        <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CONNECTER</h2>
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <p class="mb-4">X</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <!-- Modal PROGRAMMER niveau 2 -->
+                <div class="portfolio-modal modal fade" id="modalProgrammer2" tabindex="-1" aria-labelledby="modalProgrammer2" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                    <div class="modal-content text-center pb-5">
+                        <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">PROGRAMMER</h2>
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <p class="mb-4">X</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Modal SURVEILLER niveau 2 -->
+                <div class="portfolio-modal modal fade" id="modalSurveiller2" tabindex="-1" aria-labelledby="modalSurveiller2" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                    <div class="modal-content text-center pb-5">
+                        <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SURVEILLER</h2>
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <p class="mb-4">X</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <!-- Modal SECUTISER niveau 2 -->
+                <div class="portfolio-modal modal fade" id="modalSecuriser2" tabindex="-1" aria-labelledby="modalSecuriser2" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                    <div class="modal-content text-center pb-5">
+                        <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SECURISER</h2>
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <p class="mb-4">X</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+
     </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">

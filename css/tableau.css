@@ -155,3 +155,57 @@ tbody tr:hover {
   top: 5px;
 }
 
+/* Effet pour les cases cliquables du niveau 2 */
+.clic-niveau2 {
+  background-color: #e67e22; /* Orange du niveau 2 */
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.clic-niveau2 a {
+  color: white;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+/* Effet au survol */
+.clic-niveau2:hover {
+  background-color: #d35400; /* plus foncé */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.clic-niveau2 a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Effet pour les cases cliquables du niveau 2 */
+.clic-niveau2 {
+  background-color: #e67e22; /* orange du niveau 2 */
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.clic-niveau2 a {
+  color: white;
+  font-weight: 600;
+  display: block;
+  text-decoration: underline; /* ✅ souligné en permanence */
+  padding: 10px 0;
+}
+
+/* Effet au survol */
+.clic-niveau2:hover {
+  background-color: #d35400; /* plus foncé */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.clic-niveau2 a:hover {
+  color: #fff;
+  text-decoration-thickness: 3px; /* souligne un peu plus épais au survol */
+}
