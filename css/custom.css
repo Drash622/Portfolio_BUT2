@@ -1,0 +1,497 @@
+/* =============================================
+   PHOTO MASTHEAD
+   ============================================= */
+.masthead-avatar {
+    display: block;
+    width: 160px !important;
+    height: 160px !important;
+    min-width: 160px;
+    min-height: 160px;
+    border-radius: 50% !important;
+    object-fit: cover;
+    object-position: center 15%;
+    flex-shrink: 0;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.2);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.masthead-avatar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 0 4px rgba(255, 255, 255, 0.35);
+}
+
+/* =============================================
+   SECTION PRÉSENTATION – amélioration
+   ============================================= */
+#about {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f8f5 100%);
+}
+
+#about .lead {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+/* =============================================
+   BOUTON TÉLÉCHARGEMENT CV
+   ============================================= */
+.btn-outline-light {
+    border-width: 2px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    padding: 0.6rem 1.8rem;
+}
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================================
+   CV SECTION – cartes améliorées
+   ============================================= */
+.portfolio-item {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+    cursor: pointer;
+}
+.portfolio-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* =============================================
+   ACCORDION – en-têtes
+   ============================================= */
+.accordion-button {
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 0 !important;
+    letter-spacing: 0.02em;
+}
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: white;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #e8ecef;
+    border-radius: 0 !important;
+    overflow: hidden;
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+/* =============================================
+   ACCORDION BODY – cartes réflexives
+   ============================================= */
+.accordion-body {
+    background: #f0f4f8;
+    padding: 1.5rem;
+}
+
+/* Chaque <p> = haut de la carte */
+.accordion-body p {
+    display: block;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0.9rem 1.2rem 0.6rem;
+    margin-bottom: 0.65rem;
+    border-left: 5px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+.accordion-body p:last-child { margin-bottom: 0; }
+.accordion-body p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.13);
+}
+
+/* Quand un <p> est suivi d'un <ul>, supprimer le bas arrondi */
+.accordion-body p:has(+ ul) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 0.3rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+/* <ul> qui suit un <p> = bas de la carte (même bulle) */
+.accordion-body p + ul {
+    background: #ffffff;
+    padding: 0.2rem 1.2rem 0.8rem 2.2rem;
+    margin-bottom: 0.65rem;
+    border-left: 5px solid #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    list-style-position: outside;
+}
+.accordion-body p + ul:last-child { margin-bottom: 0; }
+.accordion-body p:hover + ul {
+    transform: translateX(5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.13);
+}
+.accordion-body p + ul li {
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+}
+
+/* Couleurs par section — <p> aux positions impaires, <ul> aux paires */
+.accordion-body p:nth-child(1)  { border-left-color: #3498db; }
+.accordion-body p:nth-child(3)  { border-left-color: #9b59b6; }
+.accordion-body p:nth-child(5)  { border-left-color: #27ae60; }
+.accordion-body p:nth-child(7)  { border-left-color: #e74c3c; }
+.accordion-body p:nth-child(9)  { border-left-color: #e67e22; }
+.accordion-body p:nth-child(11) { border-left-color: #1abc9c; }
+
+.accordion-body ul:nth-child(2)  { border-left-color: #3498db; }
+.accordion-body ul:nth-child(4)  { border-left-color: #9b59b6; }
+.accordion-body ul:nth-child(6)  { border-left-color: #27ae60; }
+.accordion-body ul:nth-child(8)  { border-left-color: #e74c3c; }
+.accordion-body ul:nth-child(10) { border-left-color: #e67e22; }
+.accordion-body ul:nth-child(12) { border-left-color: #1abc9c; }
+
+/* Labels en gras – mise en forme */
+.accordion-body p strong {
+    display: block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.3rem;
+}
+.accordion-body p:nth-child(1)  strong { color: #3498db; }
+.accordion-body p:nth-child(3)  strong { color: #9b59b6; }
+.accordion-body p:nth-child(5)  strong { color: #27ae60; }
+.accordion-body p:nth-child(7)  strong { color: #e74c3c; }
+.accordion-body p:nth-child(9)  strong { color: #d35400; }
+.accordion-body p:nth-child(11) strong { color: #16a085; }
+
+/* Icônes Font Awesome via pseudo-éléments */
+.accordion-body p strong::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5rem;
+    font-style: normal;
+}
+.accordion-body p:nth-child(1)  strong::before { content: "\f0ca"; } /* fa-list-check */
+.accordion-body p:nth-child(3)  strong::before { content: "\f059"; } /* fa-circle-question */
+.accordion-body p:nth-child(5)  strong::before { content: "\f013"; } /* fa-gear */
+.accordion-body p:nth-child(7)  strong::before { content: "\f071"; } /* fa-triangle-exclamation */
+.accordion-body p:nth-child(9)  strong::before { content: "\f0eb"; } /* fa-lightbulb */
+.accordion-body p:nth-child(11) strong::before { content: "\f2f9"; } /* fa-rotate-left */
+
+/* =============================================
+   MODAL LANGUES – cartes avec barres de niveau
+   ============================================= */
+.langue-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.langue-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border: 1.5px solid #e8ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.langue-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.langue-flag {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.langue-info {
+    flex: 1;
+    text-align: left;
+}
+
+.langue-nom {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.15rem;
+}
+
+.langue-niveau-label {
+    font-size: 0.78rem;
+    color: #7f8c8d;
+    margin-bottom: 0.4rem;
+}
+
+.langue-bar-wrap {
+    height: 7px;
+    background: #ecf0f1;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.langue-bar {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.6s ease;
+}
+
+.langue-badge {
+    color: white;
+    font-weight: 800;
+    font-size: 0.82rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 99px;
+    flex-shrink: 0;
+    letter-spacing: 0.05em;
+}
+
+/* =============================================
+   MODAL COMPÉTENCES – grille de cartes
+   ============================================= */
+.aptitude-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.aptitude-card {
+    background: white;
+    border-radius: 14px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border: 1.5px solid #e8ecef;
+    text-align: center;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+}
+
+.aptitude-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(26,188,156,0.2);
+    border-color: #1abc9c;
+}
+
+.aptitude-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.8rem;
+    font-size: 1.4rem;
+    color: white;
+    box-shadow: 0 4px 14px rgba(26,188,156,0.3);
+}
+
+.aptitude-label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+/* =============================================
+   SECTION PORTFOLIO – tableau compétences BUT
+   ============================================= */
+#plustard {
+    background: linear-gradient(135deg, #f8fffe 0%, #eafaf1 100%);
+}
+
+/* =============================================
+   SECTION HOBBY – améliorée
+   ============================================= */
+#Hobby {
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 50%, #1a8a78 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#Hobby::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+    animation: shimmer 8s infinite linear;
+}
+
+@keyframes shimmer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#hobby-grid {
+    gap: 0;
+}
+
+#Hobby section {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 1.4rem 1.6rem;
+    margin: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    transition: background 0.3s ease, transform 0.3s ease;
+    height: 100%;
+}
+
+#Hobby section:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateY(-4px);
+}
+
+#Hobby section h2 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#Hobby section ul {
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+}
+
+#Hobby section ul li {
+    margin-bottom: 0.25rem;
+}
+
+/* =============================================
+   MODAL – améliorée
+   ============================================= */
+.portfolio-modal .modal-content {
+    border-radius: 18px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-modal-title {
+    font-size: 1.7rem;
+    letter-spacing: 0.12em;
+    font-weight: 800;
+}
+
+.portfolio-modal .modal-body {
+    background: #f8fffe;
+}
+
+.portfolio-modal .modal-header {
+    background: transparent;
+}
+
+/* Modal CV – texte aligné à gauche amélioré */
+.portfolio-modal .text-start h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.portfolio-modal .text-start ul {
+    color: #4a4a4a;
+    padding-left: 1.2rem;
+}
+
+.portfolio-modal .text-start hr {
+    border-color: #1abc9c;
+    opacity: 0.4;
+    margin: 1rem 0;
+}
+
+/* =============================================
+   FOOTER – amélioré
+   ============================================= */
+.footer {
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%) !important;
+}
+
+.footer h4 {
+    color: #1abc9c;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+}
+
+.btn-social {
+    border-radius: 50% !important;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background: #1abc9c !important;
+    border-color: #1abc9c !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(26,188,156,0.4);
+}
+
+/* =============================================
+   NAVBAR – améliorée
+   ============================================= */
+#mainNav {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+    .masthead-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    #plustard table {
+        font-size: 0.78rem;
+    }
+
+    #plustard tbody th {
+        font-size: 0.72rem;
+        padding: 0.7rem 0.5rem;
+        white-space: normal;
+    }
+
+    .accordion-body p {
+        padding: 0.7rem 0.9rem 0.5rem;
+    }
+    .accordion-body p + ul {
+        padding: 0.2rem 0.9rem 0.7rem 1.8rem;
+    }
+
+    #Hobby section {
+        margin: 0.3rem;
+        height: auto;
+    }
+}

@@ -16,6 +16,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/tableau.css">
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="css/custom.css">
+        <!-- Font Awesome CSS (pour icônes dans les pseudo-éléments) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -41,6 +45,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar" src="assets/img/photo.jpg" alt="Estéban CUBIZOLLES" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Cubizolles Estéban</h1>
                 <img class="img-fluid" src="assets/img/photo.jpg" alt="..." />
@@ -51,7 +56,8 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Etudiant BUT Réseau & Télécommunication</p>
+                <p class="masthead-subheading font-weight-light mb-0">Étudiant BUT2 Réseaux & Télécommunications – Parcours CYBER</p>
+                <p class="masthead-subheading font-weight-light mb-0 mt-2"><em>Alternant chez CODILOG – Paris La Défense – à partir de Septembre 2026</em></p>
             </div>
         </header>
         <!-- PRESENTATION Section-->
@@ -67,8 +73,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Je m'appelle Estéban Cubizolles, j'ai 19 ans et j'habite à Mentque Nortbécourt. Je souhaiterais devenir ingénieur en cybersécurité pour sensibiliser et proteger les personnes face à des cybermenaces.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Je suis un étudiant en première année de BUT Réseau et Télécommuinication. J'ai effectué un bac général avec comme spécialité Mathématiques et Sciences de l'ingénieur.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Je m'appelle Estéban Cubizolles, j'habite dans le Pas-de-Calais et je suis titulaire du permis B. Mon objectif est de devenir ingénieur en cybersécurité pour sensibiliser et protéger les organisations face aux cybermenaces.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Je suis étudiant en 2e année de BUT Réseaux &amp; Télécommunications, parcours CYBER, à l'IUT de Béthune. Je serai alternant chez CODILOG (Paris La Défense) pour ma 3e année, à partir de septembre 2026, sur un rythme de 2 semaines / 2 semaines.</p></div>
                 </div>
             </div>
             <div class ="lead"><p class = "lead"></p></div>
@@ -83,6 +89,12 @@
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
+                </div>
+                <!-- Téléchargement CV -->
+                <div class="text-center mb-4">
+                    <a href="assets/cv.pdf" download="CV_Cubizolles_Esteban.pdf" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-download fa-fw"></i> Télécharger mon CV (PDF)
+                    </a>
                 </div>
                 <!-- CV Grid Items-->
                 <div class="row justify-content-center">
@@ -129,97 +141,73 @@
                 </div>
     
                 <table>
-                    <caption>
-                        Compétence du BUT
-                    </caption>
-                    </table>
-                <table>
-                  <thead>
-                      <tr>
-                        <th></th>
-                        <th scope="col">Niveau 1</th>
-                        <th scope="col">Niveau 2</th>
-                        <th scope="col">Niveau 3</th>
-                      </tr>
+                    <caption>Compétences du référentiel BUT R&amp;T</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Niveau 1</th>
+                            <th scope="col">Niveau 2</th>
+                            <th scope="col">Niveau 3</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="col">
-                              ADMINISTRER
-                            </th>                        
-                            <td>Assister l’administrateur du réseau</td>
+                            <th scope="row">ADMINISTRER</th>
+                            <td class="n1">Assister l’administrateur du réseau</td>
                             <td class="clic-niveau2">
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#modalAdministrer2">
-                                  Administrer un réseau
+                                    Administrer un réseau
                                 </a>
-                              </td>
-                            <td>Concevoir un réseau</td>
-                          </tr>
-                          
-                          <tr>
-                            <th scope="col">
-                              CONNECTER
-                            </th>
-                            <td>Découvrir les transmissions et la ToIP</td>
+                            </td>
+                            <td class="n3">Concevoir un réseau</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CONNECTER</th>
+                            <td class="n1">Découvrir les transmissions et la ToIP</td>
                             <td class="clic-niveau2">
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#modalConnecter2">
-                                    Maîtriser composantes des solutions de connexion
+                                    Maîtriser les composantes des solutions de connexion
                                 </a>
-                              </td>
-                            <td>Déployer une solution de connexion ou de communication</td>
-                          </tr>
-                          
-                          <tr>
-                            <th scope="col">
-                              PROGRAMMER
-                            </th> 
-                            <td>S’intégrer dans un service informatique</td>
+                            </td>
+                            <td class="n3">Déployer une solution de connexion ou de communication</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">PROGRAMMER</th>
+                            <td class="n1">S’intégrer dans un service informatique</td>
                             <td class="clic-niveau2">
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#modalProgrammer2">
-                                    Développer une application R&T
+                                    Développer une application R&amp;T
                                 </a>
-                              </td>
-                            <td>Piloter un projet de développement d’une application R&T</td>
-                          </tr>
-                          
-                          <tr>
-                            <th scope="col">
-                              SURVEILLER
-                            </th> 
+                            </td>
+                            <td class="n3">Piloter un projet de développement d’une application R&amp;T</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SURVEILLER</th>
                             <td class="clic-niveau2">
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#modalSurveiller2">
-                                    Prendre en main les outils de surveillance et de test du système d'information                                </a>
-                            </td>
-                            <td>
-                                    Mettre en œuvre le système de surveillance d’incidents de sécurité
-                            </td>
-                            <td>X</td>
-                          </tr>
-                          
-                          <tr>
-                            <th scope="col">
-                              SECURISER
-                            </th> 
-                            <td class="clic-niveau2">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalSecuriser2">
-                                    Sensibiliser aux vulnérabilités d'un système d'information                                
+                                    Prendre en main les outils de surveillance et de test du SI
                                 </a>
                             </td>
-                            <td>
-                                Mettre en œuvre un système d’information sécurisé pour une petite structure
+                            <td class="n2">Mettre en œuvre le système de surveillance d’incidents de sécurité</td>
+                            <td class="n3">—</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SÉCURISER</th>
+                            <td class="clic-niveau2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalSecuriser2">
+                                    Sensibiliser aux vulnérabilités d’un système d’information
+                                </a>
                             </td>
-                            <td>X</td>
-                          </tr>
-                          
+                            <td class="n2">Mettre en œuvre un système d’information sécurisé pour une petite structure</td>
+                            <td class="n3">—</td>
+                        </tr>
                     </tbody>
-                    <tfoot>
-                    </tfoot>
                 </table>
         </section>
         <!-- Hobby Section-->
         <section class="page-section bg-primary text-white mb-0" id="Hobby">
-            <div class="container"></div>
-                <!-- CV Section Heading-->
+            <div class="container">
+                <!-- Hobby Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Hobby</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
@@ -227,39 +215,50 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <section>
-                    <h2>Jeux Vidéo</h2>
-                    <br>
-                    <ul>
-                        <th>Découvrir de nouveaux mondes</th>
-                        <li>Relever des défis stratégiques</li>
-                        <li>Partager des moments avec d’autres joueurs</li>
-                    </ul>
-                    <br>
-                </section>
-        
-                <section>
-                    <h2>Films</h2>
-                    <br>
-                    <ul>
-                        <li>Voyager dans différents univers cinématographiques</li>
-                        <li>Apprécier le talent des acteurs et réalisateurs</li>
-                        <li>Partager des émotions avec mes proches</li>
-                    </ul>
-                    <br>
-                </section>
-
-                <section>
-                    <h2>Badminton</h2>
-                    <br>
-                    <ul>
-                        <li>Améliorer ma condition physique</li>
-                        <li>Développer mes réflexes et ma concentration</li>
-                        <li>Partager des moments avec des amis</li>
-                    </ul>
-                    <br>
-                </section>
-            </section>
+                <div class="row justify-content-center mt-3" id="hobby-grid">
+                    <div class="col-md-6 col-lg-3">
+                        <section>
+                            <h2><i class="fas fa-dice-d20 me-2"></i>Jeux de rôle</h2>
+                            <ul>
+                                <li>Créer des univers imaginaires</li>
+                                <li>Improvisation et créativité</li>
+                                <li>Jeu en équipe et liens sociaux</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <section>
+                            <h2><i class="fas fa-film me-2"></i>Cinéma</h2>
+                            <ul>
+                                <li>Explorer différents univers</li>
+                                <li>Apprécier la mise en scène</li>
+                                <li>Partager des émotions</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <section>
+                            <h2><i class="fas fa-music me-2"></i>Musique</h2>
+                            <ul>
+                                <li>Découvrir de nouveaux genres</li>
+                                <li>Se ressourcer au quotidien</li>
+                                <li>Partager des coups de cœur</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <section>
+                            <h2><i class="fas fa-laptop-code me-2"></i>Informatique</h2>
+                            <ul>
+                                <li>Expérimenter de nouvelles techs</li>
+                                <li>Lab réseau et VMs perso</li>
+                                <li>Veille en cybersécurité</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div><!-- /container -->
+        </section>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -281,12 +280,23 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/formation.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Collège Esplanade à Saint-Omer</p>
-                                    <p class="mb-4">Brevet des collèges mention très bien</p>
-                                    <p class="mb-4">Lycée Blaise Pascal à Longuenesse</p>
-                                    <p class="mb-4">Bac général spécialités : -Mathématiques -Sciences de l'ingénieur</p>
-
-                                    <p class="mb-4">Baccalauréat mention assez bien</p>
+                                    <div class="text-start">
+                                        <h5 class="text-primary">2024 – 2027</h5>
+                                        <p class="mb-1"><strong>2e année en BUT Réseaux et Télécommunications – Parcours CYBER</strong></p>
+                                        <p class="mb-1">Institut Universitaire de Technologie de Béthune</p>
+                                        <ul>
+                                            <li>Outils : Packet Tracer, Wireshark, GNS3</li>
+                                            <li>Langages : Python, HTML, CSS, Bash</li>
+                                        </ul>
+                                        <hr>
+                                        <h5 class="text-primary">2022 – 2024</h5>
+                                        <p class="mb-1"><strong>Baccalauréat général – Mention assez bien</strong></p>
+                                        <p class="mb-1">Lycée Blaise Pascal, Longuenesse</p>
+                                        <ul>
+                                            <li>Spécialité : Mathématiques</li>
+                                            <li>Spécialité : Sciences de l'ingénieur</li>
+                                        </ul>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Fermer la fenêtre
@@ -318,9 +328,40 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/exp.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Stage de 3ème </p>
-                                    <p class="mb-4">FIMATEC Ingénierie, Arques </p>
-                                    <p class="mb-4">-Apprentissage du code html & CSS -L'organisation et la répartition du travail en équipe</p>
+                                    <div class="text-start">
+                                        <h5 class="text-primary">Septembre 2026 – 2027</h5>
+                                        <p class="mb-1"><strong>Alternance systèmes et réseaux</strong></p>
+                                        <p class="mb-1">CODILOG, Paris La Défense</p>
+                                        <ul>
+                                            <li>Alternance en réseau / cloud / cybersécurité</li>
+                                            <li>Rythme 2 semaines / 2 semaines</li>
+                                        </ul>
+                                        <hr>
+                                        <h5 class="text-primary">Avril – Mai 2026</h5>
+                                        <p class="mb-1"><strong>Stage systèmes et réseaux</strong></p>
+                                        <p class="mb-1">CODILOG, Paris La Défense</p>
+                                        <ul>
+                                            <li>Audit de pentesting</li>
+                                            <li>Diagnostic de problèmes de connectivité réseau</li>
+                                            <li>Support informatique (GLPI)</li>
+                                        </ul>
+                                        <hr>
+                                        <h5 class="text-primary">2025 – 2026</h5>
+                                        <p class="mb-1"><strong>Membre du Bureau Des Étudiants</strong></p>
+                                        <p class="mb-1">BDE R&amp;T, IUT de Béthune</p>
+                                        <ul>
+                                            <li>Organisation d'événements publics</li>
+                                            <li>Participation à la vie étudiante</li>
+                                        </ul>
+                                        <hr>
+                                        <h5 class="text-primary">Août 2025</h5>
+                                        <p class="mb-1"><strong>Contrat saisonnier – Aide conducteur</strong></p>
+                                        <p class="mb-1">Ondulexpress, Wizernes</p>
+                                        <ul>
+                                            <li>Travail en équipe</li>
+                                            <li>Respect des consignes de production</li>
+                                        </ul>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Fermer la fenêtre
@@ -352,10 +393,10 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/contact.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Téléphone :  07 68 70 79 25</p>
-                                    <p class="mb-4">Mail : esteban.cubizolles1@gmail.com</p>
-                                    <p class="mb-4">Adresses : 29 rue Victor Hugo Beuvry </p>
-                                    <p class="mb-4">Code postal: 62660</p>
+                                    <p class="mb-2"><i class="fas fa-phone fa-fw"></i> 07 68 70 79 25</p>
+                                    <p class="mb-2"><i class="fas fa-envelope fa-fw"></i> esteban.cubizolles1@gmail.com</p>
+                                    <p class="mb-2"><i class="fas fa-map-marker-alt fa-fw"></i> Mobile, France</p>
+                                    <p class="mb-4"><i class="fas fa-car fa-fw"></i> Permis B + véhicule</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Fermer la fenêtre
@@ -384,12 +425,46 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/langue.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Français : Langue Maternelle</p>
-                                    <p class="mb-4">Anglais : niveau B1</p>
-                                    <p class="mb-4">Espagnol : niveau A2</p>
+                                    <div class="langue-cards mt-3 mb-4">
+
+                                        <div class="langue-card">
+                                            <div class="langue-flag">🇫🇷</div>
+                                            <div class="langue-info">
+                                                <div class="langue-nom">Français</div>
+                                                <div class="langue-niveau-label">Langue maternelle</div>
+                                                <div class="langue-bar-wrap">
+                                                    <div class="langue-bar" style="width:100%; background:#1abc9c;"></div>
+                                                </div>
+                                            </div>
+                                            <span class="langue-badge" style="background:#1abc9c;">Natif</span>
+                                        </div>
+
+                                        <div class="langue-card">
+                                            <div class="langue-flag">🇬🇧</div>
+                                            <div class="langue-info">
+                                                <div class="langue-nom">Anglais</div>
+                                                <div class="langue-niveau-label">Niveau B1 – Indépendant</div>
+                                                <div class="langue-bar-wrap">
+                                                    <div class="langue-bar" style="width:55%; background:#3498db;"></div>
+                                                </div>
+                                            </div>
+                                            <span class="langue-badge" style="background:#3498db;">B1</span>
+                                        </div>
+
+                                        <div class="langue-card">
+                                            <div class="langue-flag">🇪🇸</div>
+                                            <div class="langue-info">
+                                                <div class="langue-nom">Espagnol</div>
+                                                <div class="langue-niveau-label">Niveau A2 – Élémentaire</div>
+                                                <div class="langue-bar-wrap">
+                                                    <div class="langue-bar" style="width:30%; background:#9b59b6;"></div>
+                                                </div>
+                                            </div>
+                                            <span class="langue-badge" style="background:#9b59b6;">A2</span>
+                                        </div>
+
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Fermer la fenêtre
@@ -411,21 +486,32 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Compétences</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/comp.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">COMPÉTENCES :</p>
-                                    <p class="mb-4">-Esprit d'équipe</p>
-                                    <p class="mb-4">-Esprit critique</p>
-                                    <p class="mb-4">-Savoir communiquer</p>
-                                    <p class="mb-4">-Savoir s'adapter</p>
+                                    <div class="aptitude-grid mt-3 mb-4">
+                                        <div class="aptitude-card">
+                                            <div class="aptitude-icon"><i class="fas fa-users"></i></div>
+                                            <div class="aptitude-label">Esprit d'équipe</div>
+                                        </div>
+                                        <div class="aptitude-card">
+                                            <div class="aptitude-icon"><i class="fas fa-magnifying-glass"></i></div>
+                                            <div class="aptitude-label">Esprit critique</div>
+                                        </div>
+                                        <div class="aptitude-card">
+                                            <div class="aptitude-icon"><i class="fas fa-comments"></i></div>
+                                            <div class="aptitude-label">Savoir communiquer</div>
+                                        </div>
+                                        <div class="aptitude-card">
+                                            <div class="aptitude-icon"><i class="fas fa-arrows-rotate"></i></div>
+                                            <div class="aptitude-label">Savoir s'adapter</div>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Fermer la fenêtre
@@ -507,10 +593,10 @@
         
                 <p class="mb-4">Cliquez sur une compétence pour afficher sa description.</p>
         
-                <!--  Liste des 5 compétences -->
+                <!--  Liste des AC - Niveau 2 ADMINISTRER -->
                 <div class="accordion text-start" id="accordionAdmin">
-        
-                    <!-- Compétence 1 -->
+
+                    <!-- AC 21.01 -->
                     <div class="accordion-item">
                     <h2 class="accordion-header" id="adminComp1">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin1" aria-expanded="false" aria-controls="collapseAdmin1">
@@ -519,39 +605,120 @@
                     </h2>
                     <div id="collapseAdmin1" class="accordion-collapse collapse" aria-labelledby="adminComp1" data-bs-parent="#accordionAdmin">
                         <div class="accordion-body">
-                        Installation complète d’un serveur Linux (Debian/Ubuntu), configuration réseau, gestion des services (SSH, DNS, DHCP, NTP...).
+                            <p><strong>Ce que j’ai fait :</strong></p>
+                            <ul>
+                                <li>SAE4.Cyber.01 : configuration d’OSPF (area 0) sur Router2 et Router4 pour propager les routes LAN (192.168.x.0/24) via le tunnel GRE</li>
+                                <li>SAE3.03 : routage inter-sites sur routeurs Cisco c800 entre le siège et la succursale</li>
+                            </ul>
+                            <p><strong>Pourquoi je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Assurer la continuité du routage inter-sites tout en chiffrant les flux avec IPsec AES-256</li>
+                            </ul>
+                            <p><strong>Comment je l’ai fait :</strong></p>
+                            <ul>
+                                <li>OSPF area 0 sur les interfaces Tunnel0, Gi0/0 et Gi0/1 de chaque routeur VPN</li>
+                                <li>Routes statiques complémentaires : <code>ip route 192.168.x.0 ... 172.16.0.x</code></li>
+                                <li>Simulation et tests sous Cisco Packet Tracer</li>
+                            </ul>
+                            <p><strong>Mes difficultés :</strong></p>
+                            <ul>
+                                <li>OSPF ne propageait pas les routes tant que la SA IPsec n’était pas établie</li>
+                                <li>Difficile de distinguer un problème tunnel d’un problème OSPF sans méthode</li>
+                            </ul>
+                            <p><strong>Ce que j’en ai appris :</strong></p>
+                            <ul>
+                                <li>IPsec et OSPF sont interdépendants : un tunnel en échec bloque silencieusement la propagation des routes</li>
+                            </ul>
+                            <p><strong>Ce que je ferais autrement :</strong></p>
+                            <ul>
+                                <li>Valider GRE sans chiffrement avant d’activer IPsec, pour isoler les problèmes par couche</li>
+                            </ul>
                         </div>
                     </div>
                     </div>
-        
-                    <!-- Compétence 2 -->
+
+                    <!-- AC 21.02 -->
                     <div class="accordion-item">
                     <h2 class="accordion-header" id="adminComp2">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin2" aria-expanded="false" aria-controls="collapseAdmin2">
-                            AC21.02 | Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d’un réseau                </button>
+                            AC21.02 | Configurer et expliquer une politique de QoS et les fonctions de sécurité d’un réseau
+                        </button>
                     </h2>
                     <div id="collapseAdmin2" class="accordion-collapse collapse" aria-labelledby="adminComp2" data-bs-parent="#accordionAdmin">
                         <div class="accordion-body">
-                        Création, suppression et gestion des comptes utilisateurs, groupes et droits d’accès dans un environnement multi-utilisateur.
+                            <p><strong>Ce que j’ai fait :</strong></p>
+                            <ul>
+                                <li>SAE4.Cyber.01 : ACLs Zero Trust sur les switches L3 (ISOLATE_PROD, ISOLATE_SERVICE) et sur les ASA (INSIDE_V3, OUTSIDE_V3)</li>
+                                <li>SAE3.03 : VLAN VIDEO dédié (VLAN 40, 192.168.40.0/24) avec priorité QoS pour la diffusion</li>
+                            </ul>
+                            <p><strong>Pourquoi je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Zero Trust : Production et Service totalement isolés, seul Admin a un accès total</li>
+                                <li>QoS pour garantir la qualité des flux vidéo sur les autres VLANs</li>
+                            </ul>
+                            <p><strong>Comment je l’ai fait :</strong></p>
+                            <ul>
+                                <li>ACLs étendues en entrée (<code>ip access-group ... in</code>) sur les interfaces VLAN et inside/outside des ASA</li>
+                                <li>Seuls les ICMP echo-reply autorisés pour conserver les diagnostics ping</li>
+                            </ul>
+                            <p><strong>Mes difficultés :</strong></p>
+                            <ul>
+                                <li>Les security-level des ASA Cisco créaient des comportements implicites différents des switches</li>
+                            </ul>
+                            <p><strong>Ce que j’en ai appris :</strong></p>
+                            <ul>
+                                <li>Zero Trust cohérent = ACLs à plusieurs niveaux (switch L3 ET pare-feu) pour éviter tout contournement</li>
+                            </ul>
+                            <p><strong>Ce que je ferais autrement :</strong></p>
+                            <ul>
+                                <li>Rédiger une matrice de flux autorisés/refusés avant d’écrire les ACLs</li>
+                            </ul>
                         </div>
                     </div>
                     </div>
-        
-                    <!-- Compétence 3 -->
+
+                    <!-- AC 21.03 -->
                     <div class="accordion-item">
                     <h2 class="accordion-header" id="adminComp3">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin3" aria-expanded="false" aria-controls="collapseAdmin3">
-                            AC21.03 | Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée
+                            AC21.03 | Déployer des postes clients et des solutions virtualisées
                         </button>
                     </h2>
                     <div id="collapseAdmin3" class="accordion-collapse collapse" aria-labelledby="adminComp3" data-bs-parent="#accordionAdmin">
                         <div class="accordion-body">
-                        Installation et configuration de services tels que le partage de fichiers (Samba/NFS), le serveur web (Apache/Nginx), et la messagerie.
+                            <p><strong>Ce que j’ai fait :</strong></p>
+                            <ul>
+                                <li>SAE3.03 : déploiement Docker sur un serveur Debian (192.168.60.1) — services : Syslog, Proxy, Mail, WEB, BDD</li>
+                                <li>Windows Server (192.168.60.2) : Active Directory et DNS pour le domaine <em>societeX.pepiniere.rt</em></li>
+                            </ul>
+                            <p><strong>Pourquoi je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Docker pour isoler chaque service et faciliter le déploiement reproductible</li>
+                                <li>Windows Server imposé pour l’AD, les espaces personnels et partagés des utilisateurs</li>
+                            </ul>
+                            <p><strong>Comment je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Dockerfiles + docker-compose pour orchestrer les conteneurs</li>
+                                <li>Configuration du domaine AD et des groupes d’utilisateurs</li>
+                                <li>Synchronisation quotidienne des partages de la succursale (192.168.61.0/24) vers le siège</li>
+                            </ul>
+                            <p><strong>Mes difficultés :</strong></p>
+                            <ul>
+                                <li>Communication entre conteneurs Docker et VLANs physiques → configuration réseau spécifique (macvlan/bridge)</li>
+                            </ul>
+                            <p><strong>Ce que j’en ai appris :</strong></p>
+                            <ul>
+                                <li>La conteneurisation exige une réflexion sur la topologie réseau sous-jacente, pas seulement sur les services</li>
+                            </ul>
+                            <p><strong>Ce que je ferais autrement :</strong></p>
+                            <ul>
+                                <li>Définir l’adressage IP des conteneurs en cohérence avec les VLANs dès la conception</li>
+                            </ul>
                         </div>
                     </div>
                     </div>
-        
-                    <!-- Compétence 4 -->
+
+                    <!-- AC 21.04 -->
                     <div class="accordion-item">
                     <h2 class="accordion-header" id="adminComp4">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin4" aria-expanded="false" aria-controls="collapseAdmin4">
@@ -560,12 +727,39 @@
                     </h2>
                     <div id="collapseAdmin4" class="accordion-collapse collapse" aria-labelledby="adminComp4" data-bs-parent="#accordionAdmin">
                         <div class="accordion-body">
-                        Utilisation de scripts Bash ou Python pour automatiser les tâches courantes : sauvegardes, mises à jour, surveillance du système.
+                            <p><strong>Ce que j’ai fait :</strong></p>
+                            <ul>
+                                <li>SAE4.Cyber.01 : déploiement DNSSEC sur BIND9 (zone <em>entreprise.lan</em> signée, <code>dnssec-policy default</code>, inline-signing, version BIND masquée)</li>
+                                <li>SAE3.03 : DNS primaire au siège + réplicat en succursale (192.168.61.1) + Syslog centralisé en Docker</li>
+                            </ul>
+                            <p><strong>Pourquoi je l’ai fait :</strong></p>
+                            <ul>
+                                <li>DNSSEC pour prévenir le DNS Spoofing — validé par nos tests dsniff : les réponses falsifiées étaient rejetées</li>
+                                <li>Syslog pour agréger les journaux de tous les équipements depuis un point unique</li>
+                            </ul>
+                            <p><strong>Comment je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Zones DNS signées avec RRSIG et DNSKEY</li>
+                                <li>Vérification : <code>dig @10.0.2.15 www.entreprise.lan +dnssec</code></li>
+                                <li>Syslog déployé en conteneur Docker avec règles de filtrage par équipement</li>
+                            </ul>
+                            <p><strong>Mes difficultés :</strong></p>
+                            <ul>
+                                <li>Propagation des signatures DNSSEC et gestion des TTL (86400s selon ANSSI) difficiles à déboguer</li>
+                            </ul>
+                            <p><strong>Ce que j’en ai appris :</strong></p>
+                            <ul>
+                                <li>La sécurité DNS est critique : l’échec de nos tests de spoofing a prouvé concrètement l’efficacité de DNSSEC</li>
+                            </ul>
+                            <p><strong>Ce que je ferais autrement :</strong></p>
+                            <ul>
+                                <li>Tester DNSSEC en environnement isolé avant intégration pour éviter les interruptions de résolution</li>
+                            </ul>
                         </div>
                     </div>
                     </div>
-        
-                    <!-- Compétence 5 -->
+
+                    <!-- AC 21.05 -->
                     <div class="accordion-item">
                     <h2 class="accordion-header" id="adminComp5">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin5" aria-expanded="false" aria-controls="collapseAdmin5">
@@ -574,22 +768,78 @@
                     </h2>
                     <div id="collapseAdmin5" class="accordion-collapse collapse" aria-labelledby="adminComp5" data-bs-parent="#accordionAdmin">
                         <div class="accordion-body">
-                        Mise en œuvre d’outils de supervision (Nagios, Zabbix), analyse des journaux systèmes et gestion des incidents de sécurité.
+                            <p><strong>Ce que j’ai fait :</strong></p>
+                            <ul>
+                                <li>SAE4.Cyber.01 : simulation d’un FAI avec Router3 (10.1.0.2 ↔ 10.2.0.2) représentant Internet entre les deux sites</li>
+                                <li>SAE3.03 : configuration WAN sur Cisco c800 (10.X.1.1/8 siège, 10.X.2.1/8 succursale)</li>
+                                <li>Stage CODILOG : diagnostic de connectivité réseau jusqu’aux équipements opérateurs</li>
+                            </ul>
+                            <p><strong>Pourquoi je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Simuler un FAI réaliste pour tester le VPN et l’isolement sans exposer de vrais réseaux</li>
+                                <li>Comprendre l’architecture réelle : LAN → pare-feu → routeur VPN → ISP → site distant</li>
+                            </ul>
+                            <p><strong>Comment je l’ai fait :</strong></p>
+                            <ul>
+                                <li>OSPF area 0 sur l’ISP (réseaux 10.1.0.0/24 et 10.2.0.0/24)</li>
+                                <li>Routes statiques LAN vers les réseaux distants via le tunnel 172.16.0.x</li>
+                                <li>Wireshark et traceroute pour les diagnostics au stage</li>
+                            </ul>
+                            <p><strong>Mes difficultés :</strong></p>
+                            <ul>
+                                <li>Distinguer un problème ISP (Router3) d’un problème VPN (Router2/Router4) sans vision complète de la topo</li>
+                            </ul>
+                            <p><strong>Ce que j’en ai appris :</strong></p>
+                            <ul>
+                                <li>Maîtriser l’architecture complète LAN→ASA→VPN→ISP→site distant est indispensable pour diagnostiquer vite</li>
+                            </ul>
+                            <p><strong>Ce que je ferais autrement :</strong></p>
+                            <ul>
+                                <li>Mettre en place un monitoring dès le déploiement pour visualiser l’état des tunnels en temps réel</li>
+                            </ul>
                         </div>
                     </div>
                     </div>
-                    <!-- Compétence 6 -->
+
+                    <!-- AC 21.06 -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="adminComp6">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin6" aria-expanded="false" aria-controls="collapseAdmin5">
+                    <h2 class="accordion-header" id="adminComp6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin6" aria-expanded="false" aria-controls="collapseAdmin6">
                             AC21.06 | Travailler en équipe pour développer ses compétences professionnelles
                         </button>
-                        </h2>
-                        <div id="collapseAdmin6" class="accordion-collapse collapse" aria-labelledby="adminComp6" data-bs-parent="#accordionAdmin">
-                        </div>
+                    </h2>
+                    <div id="collapseAdmin6" class="accordion-collapse collapse" aria-labelledby="adminComp6" data-bs-parent="#accordionAdmin">
                         <div class="accordion-body">
-                            Mise en œuvre d’outils de supervision (Nagios, Zabbix), analyse des journaux systèmes et gestion des incidents de sécurité.
+                            <p><strong>Ce que j’ai fait :</strong></p>
+                            <ul>
+                                <li>SAE4.Cyber.01 — quadrinôme avec spécialisations : moi (HTTPS/CA), Geraud (DNSSEC), Etan (pentesting), Thibaut (audit ANSSI)</li>
+                                <li>SAE3.03 — groupe de 4 avec G. Karbowski et B. Allart pour le déploiement multi-sites complet</li>
+                            </ul>
+                            <p><strong>Pourquoi je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Spécialisation pour approfondir chaque domaine critique, comme dans une vraie équipe sécurité</li>
+                            </ul>
+                            <p><strong>Comment je l’ai fait :</strong></p>
+                            <ul>
+                                <li>Points de synchronisation réguliers entre membres</li>
+                                <li>Documentation partagée de l’architecture</li>
+                                <li>Intégration des sous-projets en phase finale pour valider la cohérence globale</li>
+                            </ul>
+                            <p><strong>Mes difficultés :</strong></p>
+                            <ul>
+                                <li>Le DNSSEC devait être opérationnel avant les tests de spoofing d’Etan</li>
+                                <li>Ma CA locale devait être déployée avant de valider HTTPS côté client</li>
+                            </ul>
+                            <p><strong>Ce que j’en ai appris :</strong></p>
+                            <ul>
+                                <li>La spécialisation exige une communication rigoureuse sur les dépendances pour éviter les blocages en intégration</li>
+                            </ul>
+                            <p><strong>Ce que je ferais autrement :</strong></p>
+                            <ul>
+                                <li>Définir les interfaces et dépendances entre sous-projets dès le départ</li>
+                            </ul>
                         </div>
+                    </div>
                     </div>
                 </div>
   
@@ -619,13 +869,133 @@
                             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-custom-line"></div>
                         </div>
-                        <p class="mb-4">X</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        <div class="accordion text-start" id="accordionConnecter">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="connComp1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConn1" aria-expanded="false" aria-controls="collapseConn1">
+                                    AC22.01 | Configurer et expliquer les différentes technologies de transmission
+                                </button>
+                            </h2>
+                            <div id="collapseConn1" class="accordion-collapse collapse" aria-labelledby="connComp1" data-bs-parent="#accordionConnecter">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE301 : réception FM analogique (88–108 MHz) et radio numérique DAB+ (OFDM, VHF bande III 174–240 MHz, codec AAC+) avec l'ADALM-Pluto (SDR 70 MHz–6 GHz)</li>
+                                        <li>Transmission OFDM d'un flux vidéo UDP via GNU Radio</li>
+                                        <li>Analyse des bandes autorisées (TNRBF) : ISM 433/863 MHz, WLAN 2,4/5 GHz, puissances de 1 à 100 mW selon la bande</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Comprendre les compromis de chaque techno (portée, débit, robustesse, réglementation)</li>
+                                        <li>L'OFDM a été retenu après l'échec du PSK, trop sensible aux interférences pour du streaming vidéo</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Extension fréquence du Pluto via SSH : <code>fw_setenv attr_name ad9364</code></li>
+                                        <li>GNU Radio : PlutoSDR Source → LPF → Rational Resampler → FM Demod → Audio Sink</li>
+                                        <li>Pipeline FFmpeg : H.264 + AAC, conteneur MPEG-TS, transport UDP</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>Contrainte d'échantillonnage (Fs = samp_rate / (dRS × dAD)) difficile à respecter sur VM → saturations audio</li>
+                                        <li>PSK insuffisant pour le streaming vidéo avant de passer à l'OFDM</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>L'OFDM domine les systèmes modernes (WiFi, LTE, DAB+) pour sa robustesse aux évanouissements — expérimenter son avantage sur le PSK l'a rendu concret</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Tester la chaîne en loopback local avant la transmission radio réelle pour isoler les problèmes logiciels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="connComp2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConn2" aria-expanded="false" aria-controls="collapseConn2">
+                                    AC22.02 | Déployer et configurer une solution de ToIP
+                                </button>
+                            </h2>
+                            <div id="collapseConn2" class="accordion-collapse collapse" aria-labelledby="connComp2" data-bs-parent="#accordionConnecter">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Intégration d'un IPBX et de téléphones SIP dans un VLAN dédié sur l'infrastructure multi-sites</li>
+                                        <li>Tests d'appels inter-sites via le tunnel VPN</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Unifier les communications de l'entreprise simulée — exigence du cahier des charges</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Déploiement d'un serveur Asterisk conteneurisé</li>
+                                        <li>Configuration des comptes SIP et tests d'appels inter-sites</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>Qualité des appels dégradée à cause de la latence du chiffrement VPN → ajustement QoS nécessaire</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>La VoIP est très sensible à la latence et à la gigue : sans QoS adaptée, l'expérience est inacceptable</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Prévoir la QoS dès la conception, pas en correction a posteriori</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="connComp3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConn3" aria-expanded="false" aria-controls="collapseConn3">
+                                    AC22.03 | Maîtriser le déploiement d'une infrastructure par câblage
+                                </button>
+                            </h2>
+                            <div id="collapseConn3" class="accordion-collapse collapse" aria-labelledby="connComp3" data-bs-parent="#accordionConnecter">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE3.03 : câblage physique et déploiement réel lors des 2 jours de mise en production</li>
+                                        <li>Connexion des routeurs Cisco c800, switches 2960/3560 et serveurs selon la topologie Packet Tracer</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Valider concrètement la cohérence entre la simulation (30h d'autonomie) et le déploiement physique réel</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Câblage structuré selon le schéma logique, injection des configs Cisco via console</li>
+                                        <li>Tests de connectivité inter-VLAN après déploiement des 6 VLANs (ADMIN, PROD, PERSO, VIDEO, GUEST, SERVEUR)</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>Incohérences trunk/access entre ports physiques et config VLAN, révélées seulement lors du câblage réel</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>La numérotation et l'étiquetage des ports sont indispensables : sans eux, le débogage dans une baie devient très difficile</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Documenter chaque connexion physique en temps réel dès le câblage, pas après coup</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary mt-4" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
                         </div>
                     </div>
                     </div>
                 </div>
-        
+
                 <!-- Modal PROGRAMMER niveau 2 -->
                 <div class="portfolio-modal modal fade" id="modalProgrammer2" tabindex="-1" aria-labelledby="modalProgrammer2" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -640,8 +1010,86 @@
                             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-custom-line"></div>
                         </div>
-                        <p class="mb-4">X</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        <div class="accordion text-start" id="accordionProgrammer">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="progComp1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProg1" aria-expanded="false" aria-controls="collapseProg1">
+                                    AC23.01 | Développer des scripts pour automatiser des tâches réseau
+                                </button>
+                            </h2>
+                            <div id="collapseProg1" class="accordion-collapse collapse" aria-labelledby="progComp1" data-bs-parent="#accordionProgrammer">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE301 : flowgraphs GNU Radio pour automatiser les chaînes DSP (récepteur FM, émetteur OFDM vidéo)</li>
+                                        <li>Pipeline FFmpeg : capture webcam → encodage H.264/AAC → streaming MPEG-TS en UDP</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>GNU Radio automatise tout le pipeline DSP par blocs fonctionnels, sans réécrire chaque traitement manuellement</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Conception graphique des flowgraphs dans GNU Radio Companion (Ubuntu), génération automatique du code Python</li>
+                                        <li>Test en loopback local avant déploiement sur ADALM-Pluto</li>
+                                        <li>FFmpeg : <code>-c:v libx264 -preset ultrafast -tune zerolatency -c:a aac -f mpegts udp://127.0.0.1:5000</code></li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>Incohérences de samp_rate/décimation entre blocs → erreurs silencieuses sur le signal de sortie</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>GNU Radio abstrait la complexité DSP mais exige une rigueur sur les fréquences d'échantillonnage à chaque étage</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Documenter les fréquences d'échantillonnage à chaque étage du flowgraph dès la conception</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="progComp2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProg2" aria-expanded="false" aria-controls="collapseProg2">
+                                    AC23.02 | Développer une application web dans un contexte réseau
+                                </button>
+                            </h2>
+                            <div id="collapseProg2" class="accordion-collapse collapse" aria-labelledby="progComp2" data-bs-parent="#accordionProgrammer">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Développement d'un backend Flask exposant des APIs REST (données IoT, vidéosurveillance, état réseau)</li>
+                                        <li>SAE3.03 : serveur WEB dans l'infrastructure Docker du siège</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Flask : léger, conteneurisable, adapté à une infrastructure Docker</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Routes Flask, connexion à PostgreSQL, déploiement via Dockerfile dédié</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>Sécurité de l'API (authentification, HTTPS) en conteneur plus complexe que le développement des routes</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>Une application réseau exige de penser la sécurité dès la conception : HTTPS, validation des entrées, gestion des erreurs HTTP</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Utiliser un framework d'authentification (JWT, OAuth) dès le départ plutôt qu'une implémentation manuelle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary mt-4" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
                         </div>
                     </div>
                     </div>
@@ -661,13 +1109,95 @@
                             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-custom-line"></div>
                         </div>
-                        <p class="mb-4">X</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        <div class="accordion text-start" id="accordionSurveiller">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="survComp1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSurv1" aria-expanded="false" aria-controls="collapseSurv1">
+                                    AC11.01 | Mesurer et caractériser un signal ou un canal de transmission
+                                </button>
+                            </h2>
+                            <div id="collapseSurv1" class="accordion-collapse collapse" aria-labelledby="survComp1" data-bs-parent="#accordionSurveiller">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE301 : analyse spectrale avec MCS Spectrum Analyzer + Spectran V4 — GSM 900 (Vodafone à -37 dBm sur 935-940 MHz), WiFi 2,4/5 GHz, LTE 1800 MHz uplink/downlink</li>
+                                        <li>Caractérisation FFT sous GNU Radio (résolution Δf = samp_rate/FFT Size, fenêtres Hamming/Hanning)</li>
+                                        <li>SAE4.Cyber.01 : captures Wireshark pour vérifier le chiffrement IPsec (protocole ESP) sur le tunnel inter-sites</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE301 : comprendre l'occupation réelle du spectre (relais Cartoradio site 560735, Béthune)</li>
+                                        <li>SAE4.Cyber.01 : valider que le chiffrement AES-256 était actif et qu'aucune donnée ne transitait en clair</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Profils GSM/LTE dans MCS, antenne HyperLOG 7060 orientée vers le relais, mesures en direct</li>
+                                        <li>Filtres ESP/ISAKMP dans Wireshark, comparaison avant/après activation du tunnel VPN</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>Distinguer les signaux opérateurs du bruit de fond (-80 à -90 dBm)</li>
+                                        <li>Comprendre pourquoi le downlink LTE est plus large en bande que l'uplink</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>Caractériser un signal demande autant de comprendre la technologie (OFDM, TDMA) que de maîtriser l'outil</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Enregistrer les mesures (fichiers IQ) systématiquement pour analyse a posteriori</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="survComp2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSurv2" aria-expanded="false" aria-controls="collapseSurv2">
+                                    AC11.02 | Caractériser des systèmes informatiques, des composants matériels et logiciels
+                                </button>
+                            </h2>
+                            <div id="collapseSurv2" class="accordion-collapse collapse" aria-labelledby="survComp2" data-bs-parent="#accordionSurveiller">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Stage CODILOG : diagnostic de pannes réseau — identification des composants défaillants (carte réseau, switch, câble, config)</li>
+                                        <li>SAE301 : caractérisation matérielle de l'ADALM-Pluto (325 MHz–3,8 GHz, 20 MHz BP, ADC/DAC 12 bits, 61,44 MSPS)</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Support GLPI : orienter la résolution vers le bon niveau (matériel, système, réseau)</li>
+                                        <li>SAE301 : connaître les limites de l'équipement avant de concevoir les chaînes de transmission</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Ping, traceroute, journaux système, tests physiques des câbles et ports switch</li>
+                                        <li>Lecture de la documentation technique et manipulation de l'interface web du Pluto (192.168.2.1)</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>En production, certains tests sont risqués (redémarrage de service) et demandent validation préalable</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>Diagnostic efficace = progression couche par couche (physique → réseau → applicatif), sans brûler les étapes</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Formaliser chaque diagnostic dans le ticket GLPI pour constituer une base de connaissance réutilisable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary mt-4" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
                         </div>
                     </div>
                     </div>
                 </div>
-        
+
                 <!-- Modal SECUTISER niveau 2 -->
                 <div class="portfolio-modal modal fade" id="modalSecuriser2" tabindex="-1" aria-labelledby="modalSecuriser2" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -682,8 +1212,91 @@
                             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-custom-line"></div>
                         </div>
-                        <p class="mb-4">X</p>
-                        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
+                        <div class="accordion text-start" id="accordionSecuriser">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="secComp1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSec1" aria-expanded="false" aria-controls="collapseSec1">
+                                    AC11.03 | Découvrir les dysfonctionnements et les vulnérabilités d'un système
+                                </button>
+                            </h2>
+                            <div id="collapseSec1" class="accordion-collapse collapse" aria-labelledby="secComp1" data-bs-parent="#accordionSecuriser">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE4.Cyber.01 — scénario 1 (sans DNSSEC) : attaque DNS Spoofing réussie → www.entreprise.lan redirigé vers 192.31.25.14 via MITM ARP</li>
+                                        <li>SAE4.Cyber.01 — scénario 2 (avec DNSSEC) : attaque échouée → réponses falsifiées rejetées par SERVFAIL</li>
+                                        <li>Stage CODILOG : audit de pentesting sur une infrastructure interne (scan Nmap, identification des services exposés)</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Valider concrètement l'efficacité de DNSSEC en simulant une vraie attaque Man-in-the-Middle</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Empoisonnement ARP : <code>arpspoof -i eth0 -t victime gateway</code></li>
+                                        <li>Injection de réponses DNS falsifiées avec dnsspoof, vérification avec <code>dig</code> côté victime</li>
+                                        <li>Scan de ports Nmap + rapport de vulnérabilités au stage</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>L'échec avec DNSSEC se manifeste par un code SERVFAIL, pas une absence de réponse — interprétation non évidente</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>Tenter de contourner une protection est plus convaincant que de vérifier sa config : l'échec contrôlé prouve l'efficacité réelle</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Suivre une méthodologie formalisée (OWASP, PTES) pour structurer les tests et produire un rapport exploitable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="secComp2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSec2" aria-expanded="false" aria-controls="collapseSec2">
+                                    AC11.04 | Sécuriser une infrastructure réseau selon les standards ANSSI
+                                </button>
+                            </h2>
+                            <div id="collapseSec2" class="accordion-collapse collapse" aria-labelledby="secComp2" data-bs-parent="#accordionSecuriser">
+                                <div class="accordion-body">
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul>
+                                        <li>SAE4.Cyber.01 — ma spécialité : sécurisation Web Apache2 (CA locale OpenSSL, certificat SAN IP:10.0.2.15, HTTPS, redirection HTTP→HTTPS)</li>
+                                        <li>Architecture globale : VPN IPsec GRE (AES-256) + ACLs Zero Trust ASA + DNSSEC + audit ANSSI</li>
+                                    </ul>
+                                    <p><strong>Pourquoi je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Conformité ANSSI imposée par le cahier des charges → justifier techniquement chaque choix (ex : CA locale vs certificat auto-signé)</li>
+                                    </ul>
+                                    <p><strong>Comment je l'ai fait :</strong></p>
+                                    <ul>
+                                        <li>Création CA : <code>openssl req -x509 -sha256 -days 3650 -out MaCA.pem</code></li>
+                                        <li>Certificat serveur signé avec <code>subjectAltName = IP:10.0.2.15</code></li>
+                                        <li>Résolution du conflit port 443 (doublon Listen dans Apache)</li>
+                                        <li>Import de la CA dans Firefox → chaîne de confiance sans avertissement navigateur</li>
+                                    </ul>
+                                    <p><strong>Mes difficultés :</strong></p>
+                                    <ul>
+                                        <li>CA locale non reconnue par défaut par les navigateurs → import manuel nécessaire</li>
+                                        <li>Conflit port 443 causé par un doublon Listen dans la configuration Apache</li>
+                                    </ul>
+                                    <p><strong>Ce que j'en ai appris :</strong></p>
+                                    <ul>
+                                        <li>Défense en profondeur (VPN + pare-feu + ACL + DNSSEC + HTTPS) : chaque couche compense les failles des autres</li>
+                                    </ul>
+                                    <p><strong>Ce que je ferais autrement :</strong></p>
+                                    <ul>
+                                        <li>Intégrer les tests d'intrusion tout au long du projet, pas seulement en validation finale</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary mt-4" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fermer la fenêtre</button>
                         </div>
                     </div>
                     </div>
